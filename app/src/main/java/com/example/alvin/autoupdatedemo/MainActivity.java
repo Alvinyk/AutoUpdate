@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v){
         if(v.getId() == R.id.send_request){
-           new AutoUpdate(this,this).execute();
+           new CheckUpdate(this,this).execute();
         }
     }
 

@@ -20,7 +20,7 @@ import javax.xml.parsers.SAXParserFactory;
 /**
  * Created by alvin on 2017/8/23.
  */
-public class AutoUpdate extends AsyncTask<Void,Boolean,Void> {
+public class CheckUpdate extends AsyncTask<Void,Boolean,Void> {
 
     private final String Title = "软件更新";
     private final String Infor = "检测到新版本，是否更新";
@@ -34,7 +34,7 @@ public class AutoUpdate extends AsyncTask<Void,Boolean,Void> {
     private Activity activity = null;
 
 
-    public AutoUpdate(Context context,Activity activity){
+    public CheckUpdate(Context context,Activity activity){
         this.context = context;
         this.activity = activity;
     }
